@@ -1136,28 +1136,18 @@
             "type": "integer",
             "format": "int32"
           },
-          "clubSiteHeaderColorPrimary": {
-            "type": "string",
+          "clubSiteHeaderColors": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ClubSiteHeaderColor"
+            },
             "nullable": true
           },
-          "clubSiteHeaderColorSeconday": {
-            "type": "string",
-            "nullable": true
-          },
-          "clubSiteHeaderColorTertiary": {
-            "type": "string",
-            "nullable": true
-          },
-          "clubSiteSweaterColorPrimary": {
-            "type": "string",
-            "nullable": true
-          },
-          "clubSiteSweaterColorSecondary": {
-            "type": "string",
-            "nullable": true
-          },
-          "clubSiteSweaterColorTertiary": {
-            "type": "string",
+          "clubSiteSweaterColors": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ClubSiteSweaterColor"
+            },
             "nullable": true
           },
           "clubBatchImageName": {
@@ -1204,6 +1194,42 @@
         },
         "additionalProperties": false
       },
+      "ClubSiteHeaderColor": {
+        "type": "object",
+        "properties": {
+          "clubId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "clubSiteHeaderColorId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "clubSiteHeaderColorValue": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ClubSiteSweaterColor": {
+        "type": "object",
+        "properties": {
+          "clubId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "clubSiteSweaterColorId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "clubSiteSweaterColorValue": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "ClubSocialMedia": {
         "type": "object",
         "properties": {
@@ -1217,6 +1243,22 @@
               "$ref": "#/components/schemas/SocialMedia"
             },
             "nullable": true
+          },
+          "createdBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updatedBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time"
           }
         },
         "additionalProperties": false

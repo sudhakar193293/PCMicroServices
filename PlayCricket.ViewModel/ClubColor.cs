@@ -8,12 +8,8 @@ namespace PlayCricket.ViewModel
     {
         public int Id { get; set; }
         public int ClubId { get; set; }
-        public string ClubSiteHeaderColorPrimary { get; set; } = string.Empty;
-        public string ClubSiteHeaderColorSeconday { get; set; } = string.Empty;
-        public string ClubSiteHeaderColorTertiary { get; set; } = string.Empty;
-        public string ClubSiteSweaterColorPrimary { get; set; } = string.Empty;
-        public string ClubSiteSweaterColorSecondary { get; set; } = string.Empty;
-        public string ClubSiteSweaterColorTertiary { get; set; } = string.Empty;
+        public List<ClubSiteHeaderColor>? ClubSiteHeaderColors { get; set; }
+        public List<ClubSiteSweaterColor>? ClubSiteSweaterColors { get; set; }
         public string ClubBatchImageName { get; set; } = string.Empty;
         public string ClubBatchContentType { get; set; } = string.Empty;
         public byte[] ClubBatchImageData { get; set; } = Array.Empty<byte>();

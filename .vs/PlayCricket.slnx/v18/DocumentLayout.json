@@ -7,20 +7,24 @@
       "RelativeMoniker": "D:0:0:{02A22F3D-1965-4F0F-AEA4-C06EC503CBB9}|PlayCricket.ViewModel\\PlayCricket.ViewModel.csproj|solutionrelative:playcricket.viewmodel\\clubsocialmedia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{02A22F3D-1965-4F0F-AEA4-C06EC503CBB9}|PlayCricket.ViewModel\\PlayCricket.ViewModel.csproj|c:\\users\\193293\\onedrive - cognizant\\desktop\\accounts projects\\ecb\\microservices code\\pcmicroservices\\playcricket.viewmodel\\socialmedia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02A22F3D-1965-4F0F-AEA4-C06EC503CBB9}|PlayCricket.ViewModel\\PlayCricket.ViewModel.csproj|solutionrelative:playcricket.viewmodel\\socialmedia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{02A22F3D-1965-4F0F-AEA4-C06EC503CBB9}|PlayCricket.ViewModel\\PlayCricket.ViewModel.csproj|c:\\users\\193293\\onedrive - cognizant\\desktop\\accounts projects\\ecb\\microservices code\\pcmicroservices\\playcricket.viewmodel\\clubcolor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02A22F3D-1965-4F0F-AEA4-C06EC503CBB9}|PlayCricket.ViewModel\\PlayCricket.ViewModel.csproj|solutionrelative:playcricket.viewmodel\\clubcolor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02A22F3D-1965-4F0F-AEA4-C06EC503CBB9}|PlayCricket.ViewModel\\PlayCricket.ViewModel.csproj|c:\\users\\193293\\onedrive - cognizant\\desktop\\accounts projects\\ecb\\microservices code\\pcmicroservices\\playcricket.viewmodel\\clubsiteheadercolor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02A22F3D-1965-4F0F-AEA4-C06EC503CBB9}|PlayCricket.ViewModel\\PlayCricket.ViewModel.csproj|solutionrelative:playcricket.viewmodel\\clubsiteheadercolor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3D53A0A5-BFEC-B692-537E-1A68AF39ED10}|PlayCricket\\PlayCricket.csproj|c:\\users\\193293\\onedrive - cognizant\\desktop\\accounts projects\\ecb\\microservices code\\pcmicroservices\\playcricket\\services\\clubservice\\clubsocialmediacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3D53A0A5-BFEC-B692-537E-1A68AF39ED10}|PlayCricket\\PlayCricket.csproj|solutionrelative:playcricket\\services\\clubservice\\clubsocialmediacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3D53A0A5-BFEC-B692-537E-1A68AF39ED10}|PlayCricket\\PlayCricket.csproj|c:\\users\\193293\\onedrive - cognizant\\desktop\\accounts projects\\ecb\\microservices code\\pcmicroservices\\playcricket\\services\\clubservice\\clubcolorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D53A0A5-BFEC-B692-537E-1A68AF39ED10}|PlayCricket\\PlayCricket.csproj|solutionrelative:playcricket\\services\\clubservice\\clubcolorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{02A22F3D-1965-4F0F-AEA4-C06EC503CBB9}|PlayCricket.ViewModel\\PlayCricket.ViewModel.csproj|c:\\users\\193293\\onedrive - cognizant\\desktop\\accounts projects\\ecb\\microservices code\\pcmicroservices\\playcricket.viewmodel\\socialmedia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02A22F3D-1965-4F0F-AEA4-C06EC503CBB9}|PlayCricket.ViewModel\\PlayCricket.ViewModel.csproj|solutionrelative:playcricket.viewmodel\\socialmedia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{02A22F3D-1965-4F0F-AEA4-C06EC503CBB9}|PlayCricket.ViewModel\\PlayCricket.ViewModel.csproj|c:\\users\\193293\\onedrive - cognizant\\desktop\\accounts projects\\ecb\\microservices code\\pcmicroservices\\playcricket.viewmodel\\clubcolor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02A22F3D-1965-4F0F-AEA4-C06EC503CBB9}|PlayCricket.ViewModel\\PlayCricket.ViewModel.csproj|solutionrelative:playcricket.viewmodel\\clubcolor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3D53A0A5-BFEC-B692-537E-1A68AF39ED10}|PlayCricket\\PlayCricket.csproj|c:\\users\\193293\\onedrive - cognizant\\desktop\\accounts projects\\ecb\\microservices code\\pcmicroservices\\playcricket\\services\\clubservice\\clubcolorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D53A0A5-BFEC-B692-537E-1A68AF39ED10}|PlayCricket\\PlayCricket.csproj|solutionrelative:playcricket\\services\\clubservice\\clubcolorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3D53A0A5-BFEC-B692-537E-1A68AF39ED10}|PlayCricket\\PlayCricket.csproj|c:\\users\\193293\\onedrive - cognizant\\desktop\\accounts projects\\ecb\\microservices code\\pcmicroservices\\playcricket\\services\\clubservice\\clubcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -74,15 +78,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ClubColorController.cs",
-              "DocumentMoniker": "C:\\Users\\193293\\OneDrive - Cognizant\\Desktop\\Accounts Projects\\ECB\\Microservices Code\\PCMicroServices\\PlayCricket\\Services\\ClubService\\ClubColorController.cs",
-              "RelativeDocumentMoniker": "PlayCricket\\Services\\ClubService\\ClubColorController.cs",
-              "ToolTip": "C:\\Users\\193293\\OneDrive - Cognizant\\Desktop\\Accounts Projects\\ECB\\Microservices Code\\PCMicroServices\\PlayCricket\\Services\\ClubService\\ClubColorController.cs",
-              "RelativeToolTip": "PlayCricket\\Services\\ClubService\\ClubColorController.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAAACcAAAAjAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "ClubSiteHeaderColor.cs",
+              "DocumentMoniker": "C:\\Users\\193293\\OneDrive - Cognizant\\Desktop\\Accounts Projects\\ECB\\Microservices Code\\PCMicroServices\\PlayCricket.ViewModel\\ClubSiteHeaderColor.cs",
+              "RelativeDocumentMoniker": "PlayCricket.ViewModel\\ClubSiteHeaderColor.cs",
+              "ToolTip": "C:\\Users\\193293\\OneDrive - Cognizant\\Desktop\\Accounts Projects\\ECB\\Microservices Code\\PCMicroServices\\PlayCricket.ViewModel\\ClubSiteHeaderColor.cs",
+              "RelativeToolTip": "PlayCricket.ViewModel\\ClubSiteHeaderColor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-24T10:47:37.477Z",
+              "WhenOpened": "2026-03-24T15:05:32.078Z",
               "EditorCaption": ""
             },
             {
@@ -93,14 +97,14 @@
               "RelativeDocumentMoniker": "PlayCricket.ViewModel\\ClubSocialMedia.cs",
               "ToolTip": "C:\\Users\\193293\\OneDrive - Cognizant\\Desktop\\Accounts Projects\\ECB\\Microservices Code\\PCMicroServices\\PlayCricket.ViewModel\\ClubSocialMedia.cs",
               "RelativeToolTip": "PlayCricket.ViewModel\\ClubSocialMedia.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAA0AAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-24T12:31:13.564Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ClubSocialMediaController.cs",
               "DocumentMoniker": "C:\\Users\\193293\\OneDrive - Cognizant\\Desktop\\Accounts Projects\\ECB\\Microservices Code\\PCMicroServices\\PlayCricket\\Services\\ClubService\\ClubSocialMediaController.cs",
               "RelativeDocumentMoniker": "PlayCricket\\Services\\ClubService\\ClubSocialMediaController.cs",
@@ -114,19 +118,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "ClubColor.cs",
+              "DocumentMoniker": "C:\\Users\\193293\\OneDrive - Cognizant\\Desktop\\Accounts Projects\\ECB\\Microservices Code\\PCMicroServices\\PlayCricket.ViewModel\\ClubColor.cs",
+              "RelativeDocumentMoniker": "PlayCricket.ViewModel\\ClubColor.cs",
+              "ToolTip": "C:\\Users\\193293\\OneDrive - Cognizant\\Desktop\\Accounts Projects\\ECB\\Microservices Code\\PCMicroServices\\PlayCricket.ViewModel\\ClubColor.cs",
+              "RelativeToolTip": "PlayCricket.ViewModel\\ClubColor.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAABUAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T13:30:40.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ClubColorController.cs",
+              "DocumentMoniker": "C:\\Users\\193293\\OneDrive - Cognizant\\Desktop\\Accounts Projects\\ECB\\Microservices Code\\PCMicroServices\\PlayCricket\\Services\\ClubService\\ClubColorController.cs",
+              "RelativeDocumentMoniker": "PlayCricket\\Services\\ClubService\\ClubColorController.cs",
+              "ToolTip": "C:\\Users\\193293\\OneDrive - Cognizant\\Desktop\\Accounts Projects\\ECB\\Microservices Code\\PCMicroServices\\PlayCricket\\Services\\ClubService\\ClubColorController.cs",
+              "RelativeToolTip": "PlayCricket\\Services\\ClubService\\ClubColorController.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAAACcAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T10:47:37.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "SocialMedia.cs",
               "DocumentMoniker": "C:\\Users\\193293\\OneDrive - Cognizant\\Desktop\\Accounts Projects\\ECB\\Microservices Code\\PCMicroServices\\PlayCricket.ViewModel\\SocialMedia.cs",
               "RelativeDocumentMoniker": "PlayCricket.ViewModel\\SocialMedia.cs",
               "ToolTip": "C:\\Users\\193293\\OneDrive - Cognizant\\Desktop\\Accounts Projects\\ECB\\Microservices Code\\PCMicroServices\\PlayCricket.ViewModel\\SocialMedia.cs",
               "RelativeToolTip": "PlayCricket.ViewModel\\SocialMedia.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAAAsAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-24T14:33:10.036Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "UserDetailController.cs",
               "DocumentMoniker": "C:\\Users\\193293\\OneDrive - Cognizant\\Desktop\\Accounts Projects\\ECB\\Microservices Code\\PCMicroServices\\PlayCricket\\Services\\Controllers\\UserDetailController.cs",
               "RelativeDocumentMoniker": "PlayCricket\\Services\\Controllers\\UserDetailController.cs",
@@ -139,20 +169,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ClubColor.cs",
-              "DocumentMoniker": "C:\\Users\\193293\\OneDrive - Cognizant\\Desktop\\Accounts Projects\\ECB\\Microservices Code\\PCMicroServices\\PlayCricket.ViewModel\\ClubColor.cs",
-              "RelativeDocumentMoniker": "PlayCricket.ViewModel\\ClubColor.cs",
-              "ToolTip": "C:\\Users\\193293\\OneDrive - Cognizant\\Desktop\\Accounts Projects\\ECB\\Microservices Code\\PCMicroServices\\PlayCricket.ViewModel\\ClubColor.cs",
-              "RelativeToolTip": "PlayCricket.ViewModel\\ClubColor.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAABgAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-24T13:30:40.036Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "ClubController.cs",
               "DocumentMoniker": "C:\\Users\\193293\\OneDrive - Cognizant\\Desktop\\Accounts Projects\\ECB\\Microservices Code\\PCMicroServices\\PlayCricket\\Services\\ClubService\\ClubController.cs",
               "RelativeDocumentMoniker": "PlayCricket\\Services\\ClubService\\ClubController.cs",
@@ -165,7 +182,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Class1.cs",
               "DocumentMoniker": "C:\\Users\\193293\\OneDrive - Cognizant\\Desktop\\Accounts Projects\\ECB\\Microservices Code\\PCMicroServices\\PlayCricket.ViewModel\\Class1.cs",
               "RelativeDocumentMoniker": "PlayCricket.ViewModel\\Class1.cs",
@@ -178,7 +195,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Club.cs",
               "DocumentMoniker": "C:\\Users\\193293\\OneDrive - Cognizant\\Desktop\\Accounts Projects\\ECB\\Microservices Code\\PCMicroServices\\PlayCricket.ViewModel\\Club.cs",
               "RelativeDocumentMoniker": "PlayCricket.ViewModel\\Club.cs",
@@ -191,7 +208,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "IDemoRepository.cs",
               "DocumentMoniker": "C:\\Users\\193293\\OneDrive - Cognizant\\Desktop\\Accounts Projects\\ECB\\Microservices Code\\PCMicroServices\\PlayCricket\\Services\\Controllers\\Repository\\IDemoRepository.cs",
               "RelativeDocumentMoniker": "PlayCricket\\Services\\Controllers\\Repository\\IDemoRepository.cs",
@@ -204,7 +221,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\193293\\OneDrive - Cognizant\\Desktop\\Accounts Projects\\ECB\\Microservices Code\\PCMicroServices\\PlayCricket\\Services\\UserService\\UserController.cs",
               "RelativeDocumentMoniker": "PlayCricket\\Services\\UserService\\UserController.cs",
@@ -217,7 +234,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "UserDetails.cs",
               "DocumentMoniker": "C:\\Users\\193293\\OneDrive - Cognizant\\Desktop\\Accounts Projects\\ECB\\Microservices Code\\PCMicroServices\\PlayCricket\\Services\\Controllers\\Model\\UserDetails.cs",
               "RelativeDocumentMoniker": "PlayCricket\\Services\\Controllers\\Model\\UserDetails.cs",
@@ -230,7 +247,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "WeatherForecastController.cs",
               "DocumentMoniker": "C:\\Users\\193293\\OneDrive - Cognizant\\Desktop\\Accounts Projects\\ECB\\Microservices Code\\PCMicroServices\\PlayCricket\\Services\\ClubService\\WeatherForecastController.cs",
               "RelativeDocumentMoniker": "PlayCricket\\Services\\ClubService\\WeatherForecastController.cs",
@@ -243,7 +260,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\193293\\OneDrive - Cognizant\\Desktop\\Accounts Projects\\ECB\\Microservices Code\\PCMicroServices\\PlayCricket\\appsettings.json",
               "RelativeDocumentMoniker": "PlayCricket\\appsettings.json",

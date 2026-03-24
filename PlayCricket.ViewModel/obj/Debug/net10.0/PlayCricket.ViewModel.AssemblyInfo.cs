@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PlayCricket.ViewModel")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cfa9a97b8024e7eed458574020df0442f096a290")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5f72d985203f6f143ebe4451313164be8f0df293")]
 [assembly: System.Reflection.AssemblyProductAttribute("PlayCricket.ViewModel")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PlayCricket.ViewModel")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
