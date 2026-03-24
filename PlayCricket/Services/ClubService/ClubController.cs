@@ -4,38 +4,38 @@
 
 namespace PlayCricket.Services.Controllers
 {
-    [Route("api/user")]
+    [Route("api/club")]
     [ApiController]
-    public class UserController : ControllerBase
+    public class ClubController : ControllerBase
     {
-        // GET: api/<UserController>
+        // GET: api/<ClubDetailController>
         [HttpGet]
         public IEnumerable<string> Get()
         {
             return new string[] { "value1", "value2" };
         }
 
-        // GET api/<UserController>/5
-        [HttpGet("{userid}")]
+        // GET api/<ClubDetailController>/5
+        [HttpGet("{clubid}")]
         public string Get(int id)
         {
             return "value";
         }
 
-        // POST api/<UserInfoController>
+        // POST api/<ClubDetailController>
         [HttpPost]
         public void Post([FromBody] string value)
         {
         }
 
-        // PUT api/<UserInfoController>/5
-        [HttpPut("{userid}")]
+        // PUT api/<ClubDetailController>/5
+        [HttpPut("{clubid}")]
         public void Put(int id, [FromBody] string value)
         {
         }
 
-        // DELETE api/<UserInfoController>/5
-        [HttpDelete("{userid}")]
+        // DELETE api/<ClubDetailController>/5
+        [HttpDelete("{clubid}")]
         public void Delete(int id)
         {
         }

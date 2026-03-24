@@ -2,11 +2,11 @@
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace PlayCricket.Services.Controllers
+namespace PlayCricket.Services.UserClubService
 {
     [Route("api/userclub")]
     [ApiController]
-    public class UserClubDetailController : ControllerBase
+    public class UserClubController : ControllerBase
     {
         // GET: api/<ClubUserController>
         [HttpGet]
@@ -18,6 +18,12 @@ namespace PlayCricket.Services.Controllers
         // GET api/<ClubUserController>/5
         [HttpGet("user/{userid}/clubs")]
         public string Get(int userid)
+        {
+            return "value";
+        }
+        // GET api/<ClubUserController>/5
+        [HttpGet("club/{clubid}/users")]
+        public string GetByClubId(int clubid)
         {
             return "value";
         }

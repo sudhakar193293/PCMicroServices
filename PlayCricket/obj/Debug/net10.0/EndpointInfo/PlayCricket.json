@@ -5,10 +5,10 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/clubdetail": {
+    "/api/club": {
       "get": {
         "tags": [
-          "ClubDetail"
+          "Club"
         ],
         "responses": {
           "200": {
@@ -44,7 +44,7 @@
       },
       "post": {
         "tags": [
-          "ClubDetail"
+          "Club"
         ],
         "requestBody": {
           "content": {
@@ -72,10 +72,10 @@
         }
       }
     },
-    "/api/clubdetail/{clubid}": {
+    "/api/club/{clubid}": {
       "get": {
         "tags": [
-          "ClubDetail"
+          "Club"
         ],
         "parameters": [
           {
@@ -120,7 +120,7 @@
       },
       "put": {
         "tags": [
-          "ClubDetail"
+          "Club"
         ],
         "parameters": [
           {
@@ -167,7 +167,7 @@
       },
       "delete": {
         "tags": [
-          "ClubDetail"
+          "Club"
         ],
         "parameters": [
           {
@@ -386,7 +386,7 @@
     "/api/userclub": {
       "get": {
         "tags": [
-          "UserClubDetail"
+          "UserClub"
         ],
         "responses": {
           "200": {
@@ -422,7 +422,7 @@
       },
       "post": {
         "tags": [
-          "UserClubDetail"
+          "UserClub"
         ],
         "requestBody": {
           "content": {
@@ -453,7 +453,7 @@
     "/api/userclub/user/{userid}/clubs": {
       "get": {
         "tags": [
-          "UserClubDetail"
+          "UserClub"
         ],
         "parameters": [
           {
@@ -490,10 +490,50 @@
         }
       }
     },
+    "/api/userclub/club/{clubid}/users": {
+      "get": {
+        "tags": [
+          "UserClub"
+        ],
+        "parameters": [
+          {
+            "name": "clubid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/userclub/user/{userid}/club/{clubid}": {
       "get": {
         "tags": [
-          "UserClubDetail"
+          "UserClub"
         ],
         "parameters": [
           {
@@ -540,7 +580,7 @@
       },
       "put": {
         "tags": [
-          "UserClubDetail"
+          "UserClub"
         ],
         "parameters": [
           {
@@ -589,7 +629,7 @@
       },
       "delete": {
         "tags": [
-          "UserClubDetail"
+          "UserClub"
         ],
         "parameters": [
           {
@@ -692,13 +732,13 @@
   },
   "tags": [
     {
-      "name": "ClubDetail"
+      "name": "Club"
     },
     {
       "name": "User"
     },
     {
-      "name": "UserClubDetail"
+      "name": "UserClub"
     },
     {
       "name": "UserDetail"

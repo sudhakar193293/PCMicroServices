@@ -1,8 +1,8 @@
 [
   {
-    "ContainingType": "PlayCricket.Services.Controllers.ClubDetailController",
+    "ContainingType": "PlayCricket.Services.Controllers.ClubController",
     "Method": "Get",
-    "RelativePath": "api/clubdetail",
+    "RelativePath": "api/club",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -20,9 +20,9 @@
     ]
   },
   {
-    "ContainingType": "PlayCricket.Services.Controllers.ClubDetailController",
+    "ContainingType": "PlayCricket.Services.Controllers.ClubController",
     "Method": "Post",
-    "RelativePath": "api/clubdetail",
+    "RelativePath": "api/club",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -42,9 +42,9 @@
     ]
   },
   {
-    "ContainingType": "PlayCricket.Services.Controllers.ClubDetailController",
+    "ContainingType": "PlayCricket.Services.Controllers.ClubController",
     "Method": "Get",
-    "RelativePath": "api/clubdetail/{clubid}",
+    "RelativePath": "api/club/{clubid}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -73,9 +73,9 @@
     ]
   },
   {
-    "ContainingType": "PlayCricket.Services.Controllers.ClubDetailController",
+    "ContainingType": "PlayCricket.Services.Controllers.ClubController",
     "Method": "Put",
-    "RelativePath": "api/clubdetail/{clubid}",
+    "RelativePath": "api/club/{clubid}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -105,9 +105,9 @@
     ]
   },
   {
-    "ContainingType": "PlayCricket.Services.Controllers.ClubDetailController",
+    "ContainingType": "PlayCricket.Services.Controllers.ClubController",
     "Method": "Delete",
-    "RelativePath": "api/clubdetail/{clubid}",
+    "RelativePath": "api/club/{clubid}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -132,7 +132,7 @@
     ]
   },
   {
-    "ContainingType": "PlayCricket.Services.Controllers.UserController",
+    "ContainingType": "PlayCricket.Services.UserService.UserController",
     "Method": "Get",
     "RelativePath": "api/user",
     "HttpMethod": "GET",
@@ -152,7 +152,7 @@
     ]
   },
   {
-    "ContainingType": "PlayCricket.Services.Controllers.UserController",
+    "ContainingType": "PlayCricket.Services.UserService.UserController",
     "Method": "Post",
     "RelativePath": "api/user",
     "HttpMethod": "POST",
@@ -174,7 +174,7 @@
     ]
   },
   {
-    "ContainingType": "PlayCricket.Services.Controllers.UserController",
+    "ContainingType": "PlayCricket.Services.UserService.UserController",
     "Method": "Get",
     "RelativePath": "api/user/{userid}",
     "HttpMethod": "GET",
@@ -205,7 +205,7 @@
     ]
   },
   {
-    "ContainingType": "PlayCricket.Services.Controllers.UserController",
+    "ContainingType": "PlayCricket.Services.UserService.UserController",
     "Method": "Put",
     "RelativePath": "api/user/{userid}",
     "HttpMethod": "PUT",
@@ -237,7 +237,7 @@
     ]
   },
   {
-    "ContainingType": "PlayCricket.Services.Controllers.UserController",
+    "ContainingType": "PlayCricket.Services.UserService.UserController",
     "Method": "Delete",
     "RelativePath": "api/user/{userid}",
     "HttpMethod": "DELETE",
@@ -264,7 +264,7 @@
     ]
   },
   {
-    "ContainingType": "PlayCricket.Services.Controllers.UserClubDetailController",
+    "ContainingType": "PlayCricket.Services.UserClubService.UserClubController",
     "Method": "Get",
     "RelativePath": "api/userclub",
     "HttpMethod": "GET",
@@ -284,7 +284,7 @@
     ]
   },
   {
-    "ContainingType": "PlayCricket.Services.Controllers.UserClubDetailController",
+    "ContainingType": "PlayCricket.Services.UserClubService.UserClubController",
     "Method": "Post",
     "RelativePath": "api/userclub",
     "HttpMethod": "POST",
@@ -306,7 +306,33 @@
     ]
   },
   {
-    "ContainingType": "PlayCricket.Services.Controllers.UserClubDetailController",
+    "ContainingType": "PlayCricket.Services.UserClubService.UserClubController",
+    "Method": "GetByClubId",
+    "RelativePath": "api/userclub/club/{clubid}/users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "clubid",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PlayCricket.Services.UserClubService.UserClubController",
     "Method": "Get",
     "RelativePath": "api/userclub/user/{userid}/club/{clubid}",
     "HttpMethod": "GET",
@@ -337,7 +363,7 @@
     ]
   },
   {
-    "ContainingType": "PlayCricket.Services.Controllers.UserClubDetailController",
+    "ContainingType": "PlayCricket.Services.UserClubService.UserClubController",
     "Method": "Put",
     "RelativePath": "api/userclub/user/{userid}/club/{clubid}",
     "HttpMethod": "PUT",
@@ -369,7 +395,7 @@
     ]
   },
   {
-    "ContainingType": "PlayCricket.Services.Controllers.UserClubDetailController",
+    "ContainingType": "PlayCricket.Services.UserClubService.UserClubController",
     "Method": "Delete",
     "RelativePath": "api/userclub/user/{userid}/club/{clubid}",
     "HttpMethod": "DELETE",
@@ -401,7 +427,7 @@
     ]
   },
   {
-    "ContainingType": "PlayCricket.Services.Controllers.UserClubDetailController",
+    "ContainingType": "PlayCricket.Services.UserClubService.UserClubController",
     "Method": "Get",
     "RelativePath": "api/userclub/user/{userid}/clubs",
     "HttpMethod": "GET",
