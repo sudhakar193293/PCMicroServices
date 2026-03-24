@@ -1,6 +1,7 @@
 //using Microsoft.AspNetCore.Mvc;
+//using PlayClicket;
 
-//namespace PlayClicket.Controllers
+//namespace PlayCricket.Services.Controllers
 //{
 //    [ApiController]
 //    [Route("[controller]")]
