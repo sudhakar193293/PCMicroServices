@@ -1,12 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Npgsql;
-using PlayClicket.DataContext;
-using PlayClicket.Model;
+using PlayCricket.Services.Controllers.DataContext;
+using PlayCricket.Services.Controllers.Model;
 using System.Collections.Generic;
 using System.Reflection;
 
-namespace PlayClicket.Repository
+namespace PlayCricket.Services.Controllers.Repository
 {
     public class DemoRepository : IDemoRepository
     {

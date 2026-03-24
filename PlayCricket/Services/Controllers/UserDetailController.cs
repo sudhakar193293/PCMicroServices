@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using PlayClicket.Model;
-using PlayClicket.Repository;
-namespace PlayClicket.Controllers
+using PlayCricket.Services.Controllers.Model;
+using PlayCricket.Services.Controllers.Repository;
+namespace PlayCricket.Services.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("userdetail")]
     public class UserDetailController : ControllerBase
     {
         private readonly IDemoRepository _demoRepository;

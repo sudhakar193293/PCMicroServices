@@ -1,6 +1,6 @@
-﻿using PlayClicket.Model;
+﻿using PlayCricket.Services.Controllers.Model;
 
-namespace PlayClicket.Repository
+namespace PlayCricket.Services.Controllers.Repository
 {
     public interface IDemoRepository
     {

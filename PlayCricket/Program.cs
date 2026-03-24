@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
-using PlayClicket.DataContext;
-using PlayClicket.Repository;
+using PlayCricket.Services.Controllers.DataContext;
+using PlayCricket.Services.Controllers.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 

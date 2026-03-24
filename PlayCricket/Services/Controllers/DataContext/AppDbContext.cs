@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Npgsql.EntityFrameworkCore.PostgreSQL;
-using PlayClicket.Model;
-namespace PlayClicket.DataContext
+using PlayCricket.Services.Controllers.Model;
+namespace PlayCricket.Services.Controllers.DataContext
 {
     public class AppDbContext : DbContext
     {

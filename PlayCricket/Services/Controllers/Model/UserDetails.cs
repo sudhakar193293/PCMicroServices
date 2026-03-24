@@ -1,5 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
-namespace PlayClicket.Model
+namespace PlayCricket.Services.Controllers.Model
 {
     public class UserDetails
     {
