@@ -727,3 +727,5 @@ C:\Users\193293\OneDrive - Cognizant\Desktop\Accounts Projects\ECB\Microservices
 C:\Users\193293\OneDrive - Cognizant\Desktop\Accounts Projects\ECB\Microservices Code\PCMicroServices\PlayCricket\obj\Debug\net10.0\PlayCricket.genruntimeconfig.cache
 C:\Users\193293\OneDrive - Cognizant\Desktop\Accounts Projects\ECB\Microservices Code\PCMicroServices\PlayCricket\obj\Debug\net10.0\ref\PlayCricket.dll
 C:\Users\193293\OneDrive - Cognizant\Desktop\Accounts Projects\ECB\Microservices Code\PCMicroServices\PlayCricket\obj\Debug\net10.0\PlayCricket.sourcelink.json
+C:\Users\193293\OneDrive - Cognizant\Desktop\Accounts Projects\ECB\Microservices Code\PCMicroServices\PlayCricket\bin\Debug\net10.0\PlayCricket.ViewModel.dll
+C:\Users\193293\OneDrive - Cognizant\Desktop\Accounts Projects\ECB\Microservices Code\PCMicroServices\PlayCricket\bin\Debug\net10.0\PlayCricket.ViewModel.pdb

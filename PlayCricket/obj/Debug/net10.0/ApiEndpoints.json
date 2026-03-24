@@ -9,7 +9,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "Type": "System.Collections.Generic.List\u00601[[PlayCricket.ViewModel.Club, PlayCricket.ViewModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -29,7 +29,7 @@
     "Parameters": [
       {
         "Name": "value",
-        "Type": "System.String",
+        "Type": "System.Collections.Generic.List\u00601[[PlayCricket.ViewModel.Club, PlayCricket.ViewModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "IsRequired": true
       }
     ],
@@ -50,19 +50,14 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
         "Name": "clubid",
-        "Type": "",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "System.String",
+        "Type": "PlayCricket.ViewModel.Club",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -81,18 +76,13 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
+        "Name": "clubid",
         "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "value",
-        "Type": "System.String",
         "IsRequired": true
       },
       {
-        "Name": "clubid",
-        "Type": "",
+        "Name": "value",
+        "Type": "PlayCricket.ViewModel.Club",
         "IsRequired": true
       }
     ],
@@ -113,13 +103,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
         "Name": "clubid",
-        "Type": "",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -141,7 +126,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "Type": "System.Collections.Generic.List\u00601[[PlayCricket.ViewModel.ClubColor, PlayCricket.ViewModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -161,7 +146,7 @@
     "Parameters": [
       {
         "Name": "value",
-        "Type": "System.String",
+        "Type": "PlayCricket.ViewModel.ClubColor",
         "IsRequired": true
       }
     ],
@@ -176,20 +161,20 @@
   {
     "ContainingType": "PlayCricket.Services.ClubService.ClubColorController",
     "Method": "Get",
-    "RelativePath": "api/ClubColor/{id}",
+    "RelativePath": "api/ClubColor/{clubid}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
+        "Name": "clubid",
         "Type": "System.Int32",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "System.String",
+        "Type": "PlayCricket.ViewModel.ClubColor",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -202,19 +187,19 @@
   {
     "ContainingType": "PlayCricket.Services.ClubService.ClubColorController",
     "Method": "Put",
-    "RelativePath": "api/ClubColor/{id}",
+    "RelativePath": "api/ClubColor/{clubid}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
+        "Name": "clubid",
         "Type": "System.Int32",
         "IsRequired": true
       },
       {
         "Name": "value",
-        "Type": "System.String",
+        "Type": "PlayCricket.ViewModel.ClubColor",
         "IsRequired": true
       }
     ],
@@ -229,13 +214,13 @@
   {
     "ContainingType": "PlayCricket.Services.ClubService.ClubColorController",
     "Method": "Delete",
-    "RelativePath": "api/ClubColor/{id}",
+    "RelativePath": "api/ClubColor/{clubid}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
+        "Name": "clubid",
         "Type": "System.Int32",
         "IsRequired": true
       }
@@ -258,7 +243,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "Type": "System.Collections.Generic.List\u00601[[PlayCricket.ViewModel.ClubSocialMedia, PlayCricket.ViewModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -278,7 +263,7 @@
     "Parameters": [
       {
         "Name": "value",
-        "Type": "System.String",
+        "Type": "System.Collections.Generic.List\u00601[[PlayCricket.ViewModel.ClubSocialMedia, PlayCricket.ViewModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "IsRequired": true
       }
     ],
@@ -306,7 +291,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.String",
+        "Type": "PlayCricket.ViewModel.ClubSocialMedia",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -325,18 +310,13 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
+        "Name": "clubid",
         "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "value",
-        "Type": "System.String",
         "IsRequired": true
       },
       {
-        "Name": "clubid",
-        "Type": "",
+        "Name": "value",
+        "Type": "System.Collections.Generic.List\u00601[[PlayCricket.ViewModel.ClubSocialMedia, PlayCricket.ViewModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "IsRequired": true
       }
     ],
@@ -357,13 +337,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
         "Name": "clubid",
-        "Type": "",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -395,7 +370,7 @@
       },
       {
         "Name": "value",
-        "Type": "System.String",
+        "Type": "PlayCricket.ViewModel.ClubSocialMedia",
         "IsRequired": true
       }
     ],

@@ -1,3 +1,4 @@
 <Solution>
+  <Project Path="PlayCricket.ViewModel/PlayCricket.ViewModel.csproj" Id="02a22f3d-1965-4f0f-aea4-c06ec503cbb9" />
   <Project Path="PlayCricket/PlayCricket.csproj" />
 </Solution>
