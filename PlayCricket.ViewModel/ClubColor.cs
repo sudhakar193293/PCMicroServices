@@ -20,5 +20,6 @@ namespace PlayCricket.ViewModel
         public DateTimeOffset CreatedAt { get; set; }
         public string UpdatedBy { get; set; } = string.Empty;
         public DateTimeOffset UpdatedAt { get; set; }
+        public bool IsActive { get; set; }
     }
 }
