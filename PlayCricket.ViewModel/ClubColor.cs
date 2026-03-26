@@ -10,12 +10,12 @@ namespace PlayCricket.ViewModel
         public int ClubId { get; set; }
         public List<ClubSiteHeaderColor>? ClubSiteHeaderColors { get; set; }
         public List<ClubSiteSweaterColor>? ClubSiteSweaterColors { get; set; }
-        public string ClubBatchImageName { get; set; } = string.Empty;
-        public string ClubBatchContentType { get; set; } = string.Empty;
-        public byte[] ClubBatchImageData { get; set; } = Array.Empty<byte>();
-        public int ClubBatchImageSize { get; set; }
+        public string ClubBadgeImageName { get; set; } = string.Empty;
+        public string ClubBadgeContentType { get; set; } = string.Empty;
+        public byte[] ClubBadgeImageData { get; set; } = Array.Empty<byte>();
+        public int ClubBadgeImageSize { get; set; }
         public string ChecksumSha256 { get; set; } = default!;
-        public string ClubBatchOutlineColor { get; set; } = string.Empty;
+        public string ClubBadgeOutlineColor { get; set; } = string.Empty;
         public string CreatedBy { get; set; }= string.Empty;
         public DateTimeOffset CreatedAt { get; set; }
         public string UpdatedBy { get; set; } = string.Empty;

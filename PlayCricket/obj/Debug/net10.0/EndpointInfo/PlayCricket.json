@@ -587,6 +587,37 @@
         }
       }
     },
+    "/api/TextToJson": {
+      "post": {
+        "tags": [
+          "TextToJson"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "string"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "string"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/user": {
       "get": {
         "tags": [
@@ -1169,20 +1200,20 @@
             },
             "nullable": true
           },
-          "clubBatchImageName": {
+          "clubBadgeImageName": {
             "type": "string",
             "nullable": true
           },
-          "clubBatchContentType": {
+          "clubBadgeContentType": {
             "type": "string",
             "nullable": true
           },
-          "clubBatchImageData": {
+          "clubBadgeImageData": {
             "type": "string",
             "format": "byte",
             "nullable": true
           },
-          "clubBatchImageSize": {
+          "clubBadgeImageSize": {
             "type": "integer",
             "format": "int32"
           },
@@ -1190,7 +1221,7 @@
             "type": "string",
             "nullable": true
           },
-          "clubBatchOutlineColor": {
+          "clubBadgeOutlineColor": {
             "type": "string",
             "nullable": true
           },
@@ -1401,6 +1432,9 @@
     },
     {
       "name": "ClubSocialMedia"
+    },
+    {
+      "name": "TextToJson"
     },
     {
       "name": "User"

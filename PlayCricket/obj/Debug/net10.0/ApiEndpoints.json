@@ -383,6 +383,22 @@
     ]
   },
   {
+    "ContainingType": "PlayCricket.Services.TextToJson.TextToJsonController",
+    "Method": "Post",
+    "RelativePath": "api/TextToJson",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "value",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "PlayCricket.Services.UserService.UserController",
     "Method": "Get",
     "RelativePath": "api/user",
