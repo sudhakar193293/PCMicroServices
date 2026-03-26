@@ -4,14 +4,14 @@ using System.Text;
 
 namespace PlayCricket.ViewModel
 {
-    public class SocialMedia
+    public class SocialMediaPlatforms
     {
         public int Id { get; set; }
         public int ClubId { get; set; }
-        public int SocialMediaId { get; set; }
-        public string SocialMediaName { get; set; } = string.Empty;
-        public string SocialMediaValue { get; set; } = string.Empty;
-        public string SocialMediaUrl { get; set; } = string.Empty;
+        public int SocialMediaPlatformId { get; set; }
+        public string SocialMediaPlatformName { get; set; } = string.Empty;
+        public string SocialMediaPlatformValue { get; set; } = string.Empty;
+        public string SocialMediaPlatformUrl { get; set; } = string.Empty;
         public bool IsActive { get; set; }
         public string CreatedBy { get; set; } = string.Empty;
         public DateTimeOffset CreatedAt { get; set; }

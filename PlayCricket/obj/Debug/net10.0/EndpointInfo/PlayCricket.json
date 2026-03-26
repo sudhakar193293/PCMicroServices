@@ -1309,36 +1309,17 @@
             "type": "integer",
             "format": "int32"
           },
-          "socialMediaValues": {
+          "socialMediaPlatforms": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/SocialMedia"
+              "$ref": "#/components/schemas/SocialMediaPlatforms"
             },
             "nullable": true
-          },
-          "createdBy": {
-            "type": "string",
-            "nullable": true
-          },
-          "createdAt": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "updatedBy": {
-            "type": "string",
-            "nullable": true
-          },
-          "updatedAt": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "isActive": {
-            "type": "boolean"
           }
         },
         "additionalProperties": false
       },
-      "SocialMedia": {
+      "SocialMediaPlatforms": {
         "type": "object",
         "properties": {
           "id": {
@@ -1349,19 +1330,19 @@
             "type": "integer",
             "format": "int32"
           },
-          "socialMediaId": {
+          "socialMediaPlatformId": {
             "type": "integer",
             "format": "int32"
           },
-          "socialMediaName": {
+          "socialMediaPlatformName": {
             "type": "string",
             "nullable": true
           },
-          "socialMediaValue": {
+          "socialMediaPlatformValue": {
             "type": "string",
             "nullable": true
           },
-          "socialMediaUrl": {
+          "socialMediaPlatformUrl": {
             "type": "string",
             "nullable": true
           },
