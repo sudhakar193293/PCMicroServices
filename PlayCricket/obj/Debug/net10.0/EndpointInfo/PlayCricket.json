@@ -1263,6 +1263,43 @@
   },
   "components": {
     "schemas": {
+      "BadgeBranding": {
+        "type": "object",
+        "properties": {
+          "clubBadgeImageName": {
+            "type": "string",
+            "nullable": true
+          },
+          "clubBadgeContentType": {
+            "type": "string",
+            "nullable": true
+          },
+          "clubBadgeImageData": {
+            "type": "string",
+            "format": "byte",
+            "nullable": true
+          },
+          "clubBadgeImageSize": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "checksumSha256": {
+            "type": "string",
+            "nullable": true
+          },
+          "clubBadgeOutlineColor": {
+            "type": "string",
+            "nullable": true
+          },
+          "audit": {
+            "$ref": "#/components/schemas/PlayCricketAudit"
+          },
+          "status": {
+            "$ref": "#/components/schemas/PlayCricketStatus"
+          }
+        },
+        "additionalProperties": false
+      },
       "Club": {
         "type": "object",
         "properties": {
@@ -1318,49 +1355,8 @@
           "clubColors": {
             "$ref": "#/components/schemas/Colors"
           },
-          "clubBadgeImageName": {
-            "type": "string",
-            "nullable": true
-          },
-          "clubBadgeContentType": {
-            "type": "string",
-            "nullable": true
-          },
-          "clubBadgeImageData": {
-            "type": "string",
-            "format": "byte",
-            "nullable": true
-          },
-          "clubBadgeImageSize": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "checksumSha256": {
-            "type": "string",
-            "nullable": true
-          },
-          "clubBadgeOutlineColor": {
-            "type": "string",
-            "nullable": true
-          },
-          "createdBy": {
-            "type": "string",
-            "nullable": true
-          },
-          "createdAt": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "updatedBy": {
-            "type": "string",
-            "nullable": true
-          },
-          "updatedAt": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "isActive": {
-            "type": "boolean"
+          "branding": {
+            "$ref": "#/components/schemas/BadgeBranding"
           }
         },
         "additionalProperties": false
@@ -1372,10 +1368,6 @@
             "type": "integer",
             "format": "int32"
           },
-          "clubId": {
-            "type": "integer",
-            "format": "int32"
-          },
           "clubSiteHeaderColorId": {
             "type": "integer",
             "format": "int32"
@@ -1384,24 +1376,11 @@
             "type": "string",
             "nullable": true
           },
-          "isActive": {
-            "type": "boolean"
+          "audit": {
+            "$ref": "#/components/schemas/PlayCricketAudit"
           },
-          "createdBy": {
-            "type": "string",
-            "nullable": true
-          },
-          "createdAt": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "updatedBy": {
-            "type": "string",
-            "nullable": true
-          },
-          "updatedAt": {
-            "type": "string",
-            "format": "date-time"
+          "status": {
+            "$ref": "#/components/schemas/PlayCricketStatus"
           }
         },
         "additionalProperties": false
@@ -1413,10 +1392,6 @@
             "type": "integer",
             "format": "int32"
           },
-          "clubId": {
-            "type": "integer",
-            "format": "int32"
-          },
           "clubSiteSweaterColorId": {
             "type": "integer",
             "format": "int32"
@@ -1425,24 +1400,11 @@
             "type": "string",
             "nullable": true
           },
-          "isActive": {
-            "type": "boolean"
+          "audit": {
+            "$ref": "#/components/schemas/PlayCricketAudit"
           },
-          "createdBy": {
-            "type": "string",
-            "nullable": true
-          },
-          "createdAt": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "updatedBy": {
-            "type": "string",
-            "nullable": true
-          },
-          "updatedAt": {
-            "type": "string",
-            "format": "date-time"
+          "status": {
+            "$ref": "#/components/schemas/PlayCricketStatus"
           }
         },
         "additionalProperties": false
@@ -1450,15 +1412,11 @@
       "ClubSocialMedia": {
         "type": "object",
         "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
           "clubId": {
             "type": "integer",
             "format": "int32"
           },
-          "socialMediaPlatforms": {
+          "platforms": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/SocialMediaPlatforms"
@@ -1488,36 +1446,9 @@
         },
         "additionalProperties": false
       },
-      "SocialMediaPlatforms": {
+      "PlayCricketAudit": {
         "type": "object",
         "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "clubId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "socialMediaPlatformId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "socialMediaPlatformName": {
-            "type": "string",
-            "nullable": true
-          },
-          "socialMediaPlatformValue": {
-            "type": "string",
-            "nullable": true
-          },
-          "socialMediaPlatformUrl": {
-            "type": "string",
-            "nullable": true
-          },
-          "isActive": {
-            "type": "boolean"
-          },
           "createdBy": {
             "type": "string",
             "nullable": true
@@ -1533,6 +1464,52 @@
           "updatedAt": {
             "type": "string",
             "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "PlayCricketStatus": {
+        "type": "object",
+        "properties": {
+          "isActive": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "SocialMediaPlatforms": {
+        "type": "object",
+        "properties": {
+          "platform": {
+            "$ref": "#/components/schemas/SocialPlatform"
+          },
+          "value": {
+            "type": "string",
+            "nullable": true
+          },
+          "url": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "$ref": "#/components/schemas/PlayCricketStatus"
+          },
+          "audit": {
+            "$ref": "#/components/schemas/PlayCricketAudit"
+          }
+        },
+        "additionalProperties": false
+      },
+      "SocialPlatform": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false

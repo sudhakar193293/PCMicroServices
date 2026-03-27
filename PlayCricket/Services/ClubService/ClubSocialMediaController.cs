@@ -38,7 +38,8 @@ namespace PlayCricket.Services.ClubService
         [SwaggerResponse(StatusCodes.Status500InternalServerError, "Insernal Server Error")]
         public ClubSocialMedia Get([SwaggerParameter(Description = "Unique identifier of the club.")] int clubid)
         {
-            return new ClubSocialMedia();
+            var clubSocialMedia = new ClubSocialMedia();
+            return clubSocialMedia;
         }
 
         // POST api/<ClubSocialMediaController>
