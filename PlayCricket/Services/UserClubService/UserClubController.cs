@@ -7,7 +7,7 @@ namespace PlayCricket.Services.UserClubService
     [Route("api")]
     [ApiController]
     public class UserClubController : ControllerBase
-    {
+    {        
         // GET: api/<ClubUserController>
         [HttpGet("users/clubs")]
         public IEnumerable<string> Get()

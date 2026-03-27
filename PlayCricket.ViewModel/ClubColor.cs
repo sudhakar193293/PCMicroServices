@@ -5,11 +5,9 @@ using System.Text;
 namespace PlayCricket.ViewModel
 {
     public class ClubColor
-    {
-        public int Id { get; set; }
+    {              
         public int ClubId { get; set; }
-        public List<ClubSiteHeaderColor>? ClubSiteHeaderColors { get; set; }
-        public List<ClubSiteSweaterColor>? ClubSiteSweaterColors { get; set; }
+        public Colors ClubColors { get; set; } = new Colors();
         public string ClubBadgeImageName { get; set; } = string.Empty;
         public string ClubBadgeContentType { get; set; } = string.Empty;
         public byte[] ClubBadgeImageData { get; set; } = Array.Empty<byte>();

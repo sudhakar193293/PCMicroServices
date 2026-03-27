@@ -187,9 +187,12 @@
         "tags": [
           "ClubColor"
         ],
+        "summary": "Get All Clubs and Colors",
+        "description": "Get All clubs and Colors schema.",
+        "operationId": "GetClubsColors",
         "responses": {
           "200": {
-            "description": "OK",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -216,6 +219,15 @@
                 }
               }
             }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "500": {
+            "description": "Insernal Server Error"
           }
         }
       },
@@ -223,6 +235,9 @@
         "tags": [
           "ClubColor"
         ],
+        "summary": "Insert Clubs Colors",
+        "description": "insert Club Colors",
+        "operationId": "InsertClubsColors",
         "requestBody": {
           "content": {
             "application/json": {
@@ -243,8 +258,17 @@
           }
         },
         "responses": {
-          "200": {
-            "description": "OK"
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "500": {
+            "description": "Insernal Server Error"
           }
         }
       }
@@ -254,19 +278,15 @@
         "tags": [
           "ClubColor"
         ],
+        "summary": "Get Club Colors using ClubId",
+        "description": "Get All Club Colors using ClubId",
+        "operationId": "GetClubColorsbyId",
         "parameters": [
           {
             "name": "clubid",
             "in": "path",
+            "description": "Unique identifier of the club.",
             "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          },
-          {
-            "name": "colorid",
-            "in": "query",
             "schema": {
               "type": "integer",
               "format": "int32"
@@ -275,7 +295,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -293,6 +313,15 @@
                 }
               }
             }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "500": {
+            "description": "Insernal Server Error"
           }
         }
       },
@@ -300,10 +329,14 @@
         "tags": [
           "ClubColor"
         ],
+        "summary": "Update Clubs Colors",
+        "description": "update Club Colors",
+        "operationId": "UpdateClubsColors",
         "parameters": [
           {
             "name": "clubid",
             "in": "path",
+            "description": "Unique identifier of the club.",
             "required": true,
             "schema": {
               "type": "integer",
@@ -331,8 +364,17 @@
           }
         },
         "responses": {
-          "200": {
-            "description": "OK"
+          "201": {
+            "description": "Updated"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       },
@@ -340,10 +382,14 @@
         "tags": [
           "ClubColor"
         ],
+        "summary": "Delete Club Colors",
+        "description": "Delete Club Colors",
+        "operationId": "DeleteClubColors",
         "parameters": [
           {
             "name": "clubid",
             "in": "path",
+            "description": "Unique identifier of the club.",
             "required": true,
             "schema": {
               "type": "integer",
@@ -352,8 +398,17 @@
           }
         ],
         "responses": {
-          "200": {
-            "description": "OK"
+          "201": {
+            "description": "Deleted"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "500": {
+            "description": "Insernal Server Error"
           }
         }
       }
@@ -363,9 +418,12 @@
         "tags": [
           "ClubSocialMedia"
         ],
+        "summary": "Get All Clubs and SocialMedia Platforms",
+        "description": "Get All Clubs and SocialMedia Platforms",
+        "operationId": "GetClubsSocialMediaPlatforms",
         "responses": {
           "200": {
-            "description": "OK",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -392,6 +450,15 @@
                 }
               }
             }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "500": {
+            "description": "Insernal Server Error"
           }
         }
       },
@@ -399,6 +466,9 @@
         "tags": [
           "ClubSocialMedia"
         ],
+        "summary": "Insert Clubs SocialMedia Platforms",
+        "description": "Insert Clubs SocialMedia Platforms",
+        "operationId": "InsertClubSocialMediaPlatforms",
         "requestBody": {
           "content": {
             "application/json": {
@@ -428,8 +498,17 @@
           }
         },
         "responses": {
-          "200": {
-            "description": "OK"
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "500": {
+            "description": "Insernal Server Error"
           }
         }
       }
@@ -439,10 +518,14 @@
         "tags": [
           "ClubSocialMedia"
         ],
+        "summary": "Get Club SocialMedia Platforms using ClubId",
+        "description": "Get Club SocialMedia Platforms using ClubId",
+        "operationId": "GetClubSocialMediaPlatformbyId",
         "parameters": [
           {
             "name": "clubid",
             "in": "path",
+            "description": "Unique identifier of the club.",
             "required": true,
             "schema": {
               "type": "integer",
@@ -452,7 +535,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK",
+            "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
@@ -470,6 +553,15 @@
                 }
               }
             }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "500": {
+            "description": "Insernal Server Error"
           }
         }
       },
@@ -477,10 +569,14 @@
         "tags": [
           "ClubSocialMedia"
         ],
+        "summary": "Update Clubs SocialMedia Platform",
+        "description": "Update Clubs SocialMedia Platform",
+        "operationId": "UpdateClubSocialMediaePlatform",
         "parameters": [
           {
             "name": "clubid",
             "in": "path",
+            "description": "Unique identifier of the club.",
             "required": true,
             "schema": {
               "type": "integer",
@@ -517,8 +613,17 @@
           }
         },
         "responses": {
-          "200": {
-            "description": "OK"
+          "201": {
+            "description": "Updated"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       },
@@ -526,10 +631,14 @@
         "tags": [
           "ClubSocialMedia"
         ],
+        "summary": "Delete Club SocialMedia Platform",
+        "description": "Delete Club SocialMedia Platform",
+        "operationId": "DeleteClubSocialMediaPlatform",
         "parameters": [
           {
             "name": "clubid",
             "in": "path",
+            "description": "Unique identifier of the club.",
             "required": true,
             "schema": {
               "type": "integer",
@@ -538,8 +647,17 @@
           }
         ],
         "responses": {
-          "200": {
-            "description": "OK"
+          "201": {
+            "description": "Deleted"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "500": {
+            "description": "Insernal Server Error"
           }
         }
       }
@@ -549,10 +667,14 @@
         "tags": [
           "ClubSocialMedia"
         ],
+        "summary": "Update Clubs SocialMedia Platform by using their Id's",
+        "description": "Update Clubs SocialMedia Platform",
+        "operationId": "UpdateClubSocialMediaePlatform",
         "parameters": [
           {
             "name": "clubid",
             "in": "path",
+            "description": "Unique identifier of the club.",
             "required": true,
             "schema": {
               "type": "integer",
@@ -562,6 +684,7 @@
           {
             "name": "socialmediaid",
             "in": "path",
+            "description": "Unique identifier of the SocialMedia Platform.",
             "required": true,
             "schema": {
               "type": "integer",
@@ -589,8 +712,17 @@
           }
         },
         "responses": {
-          "200": {
-            "description": "OK"
+          "201": {
+            "description": "Updated"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       }
@@ -1179,27 +1311,12 @@
       "ClubColor": {
         "type": "object",
         "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
           "clubId": {
             "type": "integer",
             "format": "int32"
           },
-          "clubSiteHeaderColors": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ClubSiteHeaderColor"
-            },
-            "nullable": true
-          },
-          "clubSiteSweaterColors": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ClubSiteSweaterColor"
-            },
-            "nullable": true
+          "clubColors": {
+            "$ref": "#/components/schemas/Colors"
           },
           "clubBadgeImageName": {
             "type": "string",
@@ -1351,6 +1468,26 @@
         },
         "additionalProperties": false
       },
+      "Colors": {
+        "type": "object",
+        "properties": {
+          "headers": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ClubSiteHeaderColor"
+            },
+            "nullable": true
+          },
+          "sweaters": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ClubSiteSweaterColor"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "SocialMediaPlatforms": {
         "type": "object",
         "properties": {
@@ -1429,10 +1566,12 @@
       "name": "Club"
     },
     {
-      "name": "ClubColor"
+      "name": "ClubColor",
+      "description": "Club Colors"
     },
     {
-      "name": "ClubSocialMedia"
+      "name": "ClubSocialMedia",
+      "description": "Club SocialMedia"
     },
     {
       "name": "TextToJson"
