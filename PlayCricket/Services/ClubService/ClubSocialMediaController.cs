@@ -5,42 +5,42 @@ using PlayCricket.ViewModel;
 
 namespace PlayCricket.Services.ClubService
 {
-    [Route("api/clubsocialmedia")]
+    [Route("api/clubs")]
     [ApiController]
     public class ClubSocialMediaController : ControllerBase
     {
         // GET: api/<ClubSocialMediaController>
-        [HttpGet]
+        [HttpGet("socialmedia")]
         public List<ClubSocialMedia> Get()
         {
             return new List<ClubSocialMedia>();
         }
 
         // GET api/<ClubSocialMediaController>/5
-        [HttpGet("{clubid}")]
+        [HttpGet("{clubid}/socialmedia")]
         public ClubSocialMedia Get(int clubid)
         {
             return new ClubSocialMedia();
         }
 
         // POST api/<ClubSocialMediaController>
-        [HttpPost]
+        [HttpPost("socialmedia")]
         public void Post([FromBody] List<ClubSocialMedia> value)
         {
         }
 
         // PUT api/<ClubSocialMediaController>/5
-        [HttpPut("{clubid}")]
+        [HttpPut("{clubid}/socialmedia")]
         public void Put(int clubid, [FromBody] List<ClubSocialMedia> value)
         {
         }
-        [HttpPut("club/{clubid}/socialmedia/{socialmediaid}")]
+        [HttpPut("{clubid}/socialmedia/{socialmediaid}")]
         public void PutSocialMedia(int clubid,int socialmediaid, ClubSocialMedia value)
         {
         }
 
         // DELETE api/<ClubSocialMediaController>/5
-        [HttpDelete("{clubid}")]
+        [HttpDelete("{clubid}/socialmedia")]
         public void Delete(int clubid)
         {
         }

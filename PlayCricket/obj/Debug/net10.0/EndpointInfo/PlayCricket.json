@@ -182,7 +182,7 @@
         }
       }
     },
-    "/api/ClubColor": {
+    "/api/clubs/colors": {
       "get": {
         "tags": [
           "ClubColor"
@@ -249,7 +249,7 @@
         }
       }
     },
-    "/api/ClubColor/{clubid}": {
+    "/api/clubs/{clubid}/colors": {
       "get": {
         "tags": [
           "ClubColor"
@@ -259,6 +259,14 @@
             "name": "clubid",
             "in": "path",
             "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "colorid",
+            "in": "query",
             "schema": {
               "type": "integer",
               "format": "int32"
@@ -350,7 +358,7 @@
         }
       }
     },
-    "/api/clubsocialmedia": {
+    "/api/clubs/socialmedia": {
       "get": {
         "tags": [
           "ClubSocialMedia"
@@ -426,7 +434,7 @@
         }
       }
     },
-    "/api/clubsocialmedia/{clubid}": {
+    "/api/clubs/{clubid}/socialmedia": {
       "get": {
         "tags": [
           "ClubSocialMedia"
@@ -536,7 +544,7 @@
         }
       }
     },
-    "/api/clubsocialmedia/club/{clubid}/socialmedia/{socialmediaid}": {
+    "/api/clubs/{clubid}/socialmedia/{socialmediaid}": {
       "put": {
         "tags": [
           "ClubSocialMedia"
@@ -807,7 +815,7 @@
         }
       }
     },
-    "/api/userclub": {
+    "/api/users/clubs": {
       "get": {
         "tags": [
           "UserClub"
@@ -874,7 +882,7 @@
         }
       }
     },
-    "/api/userclub/user/{userid}/clubs": {
+    "/api/users/{userid}/clubs": {
       "get": {
         "tags": [
           "UserClub"
@@ -914,7 +922,7 @@
         }
       }
     },
-    "/api/userclub/club/{clubid}/users": {
+    "/api/clubs/{clubid}/users": {
       "get": {
         "tags": [
           "UserClub"
@@ -954,7 +962,7 @@
         }
       }
     },
-    "/api/userclub/user/{userid}/club/{clubid}": {
+    "/api/users/{userid}/clubs/{clubid}": {
       "get": {
         "tags": [
           "UserClub"
@@ -1057,8 +1065,9 @@
         ],
         "parameters": [
           {
-            "name": "id",
-            "in": "query",
+            "name": "clubid",
+            "in": "path",
+            "required": true,
             "schema": {
               "type": "integer",
               "format": "int32"
@@ -1066,14 +1075,6 @@
           },
           {
             "name": "userid",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "clubid",
             "in": "path",
             "required": true,
             "schema": {

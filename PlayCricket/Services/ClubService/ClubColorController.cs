@@ -5,38 +5,38 @@ using PlayCricket.ViewModel;
 
 namespace PlayCricket.Services.ClubService
 {
-    [Route("api/[controller]")]
+    [Route("api/clubs")]
     [ApiController]
     public class ClubColorController : ControllerBase
     {
         // GET: api/<ClubColorController>
-        [HttpGet]
+        [HttpGet("colors")]
         public List<ClubColor> Get()
         {
             return new List<ClubColor>();
         }
 
         // GET api/<ClubColorController>/5
-        [HttpGet("{clubid}")]
-        public ClubColor Get(int clubid)
+        [HttpGet("{clubid}/colors")]
+        public ClubColor Get(int clubid,int colorid)
         {
             return new ClubColor();
         }
 
         // POST api/<ClubColorController>
-        [HttpPost]
+        [HttpPost("colors")]
         public void Post([FromBody] ClubColor value)
         {
         }
 
         // PUT api/<ClubColorController>/5
-        [HttpPut("{clubid}")]
+        [HttpPut("{clubid}/colors")]
         public void Put(int clubid, [FromBody] ClubColor value)
         {
         }
 
         // DELETE api/<ClubColorController>/5
-        [HttpDelete("{clubid}")]
+        [HttpDelete("{clubid}/colors")]
         public void Delete(int clubid)
         {
         }

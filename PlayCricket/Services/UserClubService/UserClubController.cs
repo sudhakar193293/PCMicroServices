@@ -4,32 +4,32 @@
 
 namespace PlayCricket.Services.UserClubService
 {
-    [Route("api/userclub")]
+    [Route("api")]
     [ApiController]
     public class UserClubController : ControllerBase
     {
         // GET: api/<ClubUserController>
-        [HttpGet]
+        [HttpGet("users/clubs")]
         public IEnumerable<string> Get()
         {
             return new string[] { "value1", "value2" };
         }
 
         // GET api/<ClubUserController>/5
-        [HttpGet("user/{userid}/clubs")]
+        [HttpGet("users/{userid}/clubs")]
         public string Get(int userid)
         {
             return "value";
         }
         // GET api/<ClubUserController>/5
-        [HttpGet("club/{clubid}/users")]
+        [HttpGet("clubs/{clubid}/users")]
         public string GetByClubId(int clubid)
         {
             return "value";
         }
 
         // GET api/<ClubUserController>/5
-        [HttpGet("user/{userid}/club/{clubid}")]
+        [HttpGet("users/{userid}/clubs/{clubid}")]
         public string Get(int userid,int clubid)
         {
             return "value";
@@ -37,20 +37,20 @@ namespace PlayCricket.Services.UserClubService
         
 
         // POST api/<ClubUserController>
-        [HttpPost]
+        [HttpPost("users/clubs")]
         public void Post([FromBody] string value)
         {
         }
 
         // PUT api/<ClubUserController>/5
-        [HttpPut("user/{userid}/club/{clubid}")]
+        [HttpPut("users/{userid}/clubs/{clubid}")]
         public void Put(int userid,int clubid, [FromBody] string value)
         {
         }
 
         // DELETE api/<ClubUserController>/5
-        [HttpDelete("user/{userid}/club/{clubid}")]
-        public void Delete(int id)
+        [HttpDelete("users/{userid}/clubs/{clubid}")]
+        public void Delete(int clubid)
         {
         }
     }

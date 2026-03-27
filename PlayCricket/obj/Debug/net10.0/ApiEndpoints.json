@@ -119,49 +119,7 @@
   {
     "ContainingType": "PlayCricket.Services.ClubService.ClubColorController",
     "Method": "Get",
-    "RelativePath": "api/ClubColor",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.List\u00601[[PlayCricket.ViewModel.ClubColor, PlayCricket.ViewModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "PlayCricket.Services.ClubService.ClubColorController",
-    "Method": "Post",
-    "RelativePath": "api/ClubColor",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "value",
-        "Type": "PlayCricket.ViewModel.ClubColor",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "PlayCricket.Services.ClubService.ClubColorController",
-    "Method": "Get",
-    "RelativePath": "api/ClubColor/{clubid}",
+    "RelativePath": "api/clubs/{clubid}/colors",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -170,6 +128,11 @@
         "Name": "clubid",
         "Type": "System.Int32",
         "IsRequired": true
+      },
+      {
+        "Name": "colorid",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
@@ -187,7 +150,7 @@
   {
     "ContainingType": "PlayCricket.Services.ClubService.ClubColorController",
     "Method": "Put",
-    "RelativePath": "api/ClubColor/{clubid}",
+    "RelativePath": "api/clubs/{clubid}/colors",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -214,7 +177,7 @@
   {
     "ContainingType": "PlayCricket.Services.ClubService.ClubColorController",
     "Method": "Delete",
-    "RelativePath": "api/ClubColor/{clubid}",
+    "RelativePath": "api/clubs/{clubid}/colors",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -236,49 +199,7 @@
   {
     "ContainingType": "PlayCricket.Services.ClubService.ClubSocialMediaController",
     "Method": "Get",
-    "RelativePath": "api/clubsocialmedia",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.List\u00601[[PlayCricket.ViewModel.ClubSocialMedia, PlayCricket.ViewModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "PlayCricket.Services.ClubService.ClubSocialMediaController",
-    "Method": "Post",
-    "RelativePath": "api/clubsocialmedia",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "value",
-        "Type": "System.Collections.Generic.List\u00601[[PlayCricket.ViewModel.ClubSocialMedia, PlayCricket.ViewModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "PlayCricket.Services.ClubService.ClubSocialMediaController",
-    "Method": "Get",
-    "RelativePath": "api/clubsocialmedia/{clubid}",
+    "RelativePath": "api/clubs/{clubid}/socialmedia",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -304,7 +225,7 @@
   {
     "ContainingType": "PlayCricket.Services.ClubService.ClubSocialMediaController",
     "Method": "Put",
-    "RelativePath": "api/clubsocialmedia/{clubid}",
+    "RelativePath": "api/clubs/{clubid}/socialmedia",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -331,7 +252,7 @@
   {
     "ContainingType": "PlayCricket.Services.ClubService.ClubSocialMediaController",
     "Method": "Delete",
-    "RelativePath": "api/clubsocialmedia/{clubid}",
+    "RelativePath": "api/clubs/{clubid}/socialmedia",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -353,7 +274,7 @@
   {
     "ContainingType": "PlayCricket.Services.ClubService.ClubSocialMediaController",
     "Method": "PutSocialMedia",
-    "RelativePath": "api/clubsocialmedia/club/{clubid}/socialmedia/{socialmediaid}",
+    "RelativePath": "api/clubs/{clubid}/socialmedia/{socialmediaid}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -371,6 +292,116 @@
       {
         "Name": "value",
         "Type": "PlayCricket.ViewModel.ClubSocialMedia",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PlayCricket.Services.UserClubService.UserClubController",
+    "Method": "GetByClubId",
+    "RelativePath": "api/clubs/{clubid}/users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "clubid",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PlayCricket.Services.ClubService.ClubColorController",
+    "Method": "Get",
+    "RelativePath": "api/clubs/colors",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[PlayCricket.ViewModel.ClubColor, PlayCricket.ViewModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PlayCricket.Services.ClubService.ClubColorController",
+    "Method": "Post",
+    "RelativePath": "api/clubs/colors",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "value",
+        "Type": "PlayCricket.ViewModel.ClubColor",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PlayCricket.Services.ClubService.ClubSocialMediaController",
+    "Method": "Get",
+    "RelativePath": "api/clubs/socialmedia",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[PlayCricket.ViewModel.ClubSocialMedia, PlayCricket.ViewModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PlayCricket.Services.ClubService.ClubSocialMediaController",
+    "Method": "Post",
+    "RelativePath": "api/clubs/socialmedia",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "value",
+        "Type": "System.Collections.Generic.List\u00601[[PlayCricket.ViewModel.ClubSocialMedia, PlayCricket.ViewModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "IsRequired": true
       }
     ],
@@ -533,55 +564,13 @@
   {
     "ContainingType": "PlayCricket.Services.UserClubService.UserClubController",
     "Method": "Get",
-    "RelativePath": "api/userclub",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "PlayCricket.Services.UserClubService.UserClubController",
-    "Method": "Post",
-    "RelativePath": "api/userclub",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "value",
-        "Type": "System.String",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "PlayCricket.Services.UserClubService.UserClubController",
-    "Method": "GetByClubId",
-    "RelativePath": "api/userclub/club/{clubid}/users",
+    "RelativePath": "api/users/{userid}/clubs",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "clubid",
+        "Name": "userid",
         "Type": "System.Int32",
         "IsRequired": true
       }
@@ -601,7 +590,7 @@
   {
     "ContainingType": "PlayCricket.Services.UserClubService.UserClubController",
     "Method": "Get",
-    "RelativePath": "api/userclub/user/{userid}/club/{clubid}",
+    "RelativePath": "api/users/{userid}/clubs/{clubid}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -632,7 +621,7 @@
   {
     "ContainingType": "PlayCricket.Services.UserClubService.UserClubController",
     "Method": "Put",
-    "RelativePath": "api/userclub/user/{userid}/club/{clubid}",
+    "RelativePath": "api/users/{userid}/clubs/{clubid}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -664,23 +653,18 @@
   {
     "ContainingType": "PlayCricket.Services.UserClubService.UserClubController",
     "Method": "Delete",
-    "RelativePath": "api/userclub/user/{userid}/club/{clubid}",
+    "RelativePath": "api/users/{userid}/clubs/{clubid}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
+        "Name": "clubid",
         "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "userid",
-        "Type": "",
         "IsRequired": true
       },
       {
-        "Name": "clubid",
+        "Name": "userid",
         "Type": "",
         "IsRequired": true
       }
@@ -696,25 +680,41 @@
   {
     "ContainingType": "PlayCricket.Services.UserClubService.UserClubController",
     "Method": "Get",
-    "RelativePath": "api/userclub/user/{userid}/clubs",
+    "RelativePath": "api/users/clubs",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [
-      {
-        "Name": "userid",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
+    "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.String",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
           "text/json"
         ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PlayCricket.Services.UserClubService.UserClubController",
+    "Method": "Post",
+    "RelativePath": "api/users/clubs",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "value",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
         "StatusCode": 200
       }
     ]
